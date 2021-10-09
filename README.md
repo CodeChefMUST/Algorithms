@@ -1,3 +1,4 @@
+![Codechef Logo](https://user-images.githubusercontent.com/77433608/136649361-89697879-7105-44d2-83cc-5af4eb1e6f40.png)
 # DSA
 
 # Overview 
