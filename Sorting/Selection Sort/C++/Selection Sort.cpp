@@ -1,40 +1,42 @@
-#include<bits/stdc++.h>
+#include<iostream>
+ 
 using namespace std;
-
-int Minimum_element(int[],int,int); 
-
-int main ()  
-{  
-    int n;
+ 
+int main()
+{
+    int i,j,n,loc,temp,min,a[30];
+    cout<<"Enter the number of elements:";
     cin>>n;
-    int a[
-    int i, position, temp;
-    int n = sizeof(Arr[])/sizeof(int);
-    for(i=0; i<n ;i++)  
-    {  
-        position = Minimum_element(Arr, n, i);  
-        temp = Arr[i];  
-        Arr[i] = Arr[position];  
-        Arr[position] = temp;  
-    }  
-    cout << "The sorted array is:\n";  
-    for(i=0; i<n; i++)  
-    {  
-        cout << " " << Arr[i];  
-    }  
-}  
-int Minimum_element(int a[], int n, int i)  
-{  
-    int min,position,j;  
-    min = a[i];  
-    position = i;  
-    for(j=i+1; j<10; j++)  
-    {  
-        if(a[j] < min)  
-        {  
-            min = a[j];  
-            position = j;  
-        }  
-    }  
-    return position;  
-} 
+    cout<<"\nEnter the elements\n";
+ 
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+ 
+    for(i=0;i<n-1;i++)
+    {
+        min=a[i];
+        loc=i;
+        for(j=i+1;j<n;j++)
+        {
+            if(min>a[j])
+            {
+                min=a[j];
+                loc=j;
+            }
+        }
+ 
+        temp=a[i];
+        a[i]=a[loc];
+        a[loc]=temp;
+    }
+ 
+    cout<<"\nSorted list is as follows\n";
+    for(i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+ 
+    return 0;
+}
