@@ -1,4 +1,4 @@
-```
+```c++
 #include<iostream>
 using namespace std;
  
@@ -29,7 +29,7 @@ int main()
         a[i]=a[position];
         a[position]=temp;
     }
-    cout<<"Array after applying Selection Sort: "<<endl;
+    cout<<"Array elements after applying Selection Sort: "<<endl;
     for(i=0;i<n;i++)
     {
         cout<<a[i]<<" ";
@@ -37,3 +37,19 @@ int main()
     return 0;
 }
 ```
+
+### Sample Input:
+```c++
+Enter the number of elements: 
+7
+Enter the elements of array:
+12 -78 99 -23 55 36 91
+ ```
+ ### Output for above input
+ ```c++
+Array elements after applying Selection Sort: 
+-78 -23 12 36 55 91 99 
+```
+**TIME COMPLEXITY:** O(n^2)  
+**SPACE COMPLEXITY:** O(1)
+
