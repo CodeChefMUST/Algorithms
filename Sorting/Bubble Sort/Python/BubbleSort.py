@@ -1,5 +1,5 @@
-# Creating a bubble sort function 
-# Contributed by ankit 
+# Creating a bubble sort function
+# contributed by ankit  
 def bubble_sort(list1):  
     # Outer loop for traverse the entire list  
     for i in range(0,len(list1)-1):  
@@ -13,4 +13,4 @@ def bubble_sort(list1):
 list1 = [5, 3, 8, 6, 7, 2]  
 print("The unsorted list is: ", list1)  
 # Calling the bubble sort function  
-print("The sorted list is: ", bubble_sort(list1)) 
+print("The sorted list is: ", bubble_sort(list1))  
