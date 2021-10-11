@@ -3,7 +3,7 @@
 ### **Steps**
 
 1. Browse code and issue list, find some existing issue or create a new one.
-2. Comment on issue you want to work on. Don't forget to mention the language you are planning to use.
+2. Comment on the issue that you want to work on. Don't forget to mention the language you are planning to use.
 3. Wait for issue to be assigned to you.
 4. Create a new branch in your forked repo and start working on your code.
 5. Along with the code add following contents -
@@ -14,10 +14,12 @@
     * Sample Outputs
     * Time Complexity
     * Space Complexity
+* You need not write any `main` function
+* Don't forget to mention your username as the author
 
-6. Update algo.md file in present in the language folder for every algorithm.
-7. Create a pull request and mention the issue number.
-8. Wait for it to be get reviewed and approved by maintainers
+6. Update algo.md file in present in the language folder for every algorithm, if required.
+7. Create a pull request and mention the issue number, also, give edit access to collaborators and maintainers.
+8. Wait for it to be get reviewed and approved by maintainers.
 
 ### **Note**
 
@@ -31,3 +33,4 @@
 * PR should be created within a week of you being assigned to it.
 * At no point of time, you can claim more than 4 issues i.e. you can have at max 4 working issues, for this repository.
 
+If you're wondering how to create a pull request, then take a look at [this](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request). 
