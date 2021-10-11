@@ -1,42 +1,39 @@
+```
 #include<iostream>
- 
 using namespace std;
  
 int main()
 {
-    int i,j,n,loc,temp,min,a[30];
-    cout<<"Enter the number of elements:";
+    int i,j,n,temp,position,minimum;
+    cout<<"Enter the number of elements: "<<endl;
     cin>>n;
-    cout<<"\nEnter the elements\n";
- 
+    int a[n];
+    cout<<"Enter the elements of array:"<<endl;
     for(i=0;i<n;i++)
     {
         cin>>a[i];
     }
- 
     for(i=0;i<n-1;i++)
     {
-        min=a[i];
-        loc=i;
+        minimum=a[i];
+        position=i;
         for(j=i+1;j<n;j++)
         {
-            if(min>a[j])
+            if(minimum>a[j])
             {
-                min=a[j];
-                loc=j;
+                minimum=a[j];
+                position=j;
             }
         }
- 
         temp=a[i];
-        a[i]=a[loc];
-        a[loc]=temp;
+        a[i]=a[position];
+        a[position]=temp;
     }
- 
-    cout<<"\nSorted list is as follows\n";
+    cout<<"Array after applying Selection Sort: "<<endl;
     for(i=0;i<n;i++)
     {
         cout<<a[i]<<" ";
     }
- 
     return 0;
 }
+```
