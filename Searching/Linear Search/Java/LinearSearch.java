@@ -4,7 +4,7 @@ public class LinearSearch
 		Linear search function:
 
 		-Takes in two arguments 
-			1. int array
+			1. int array[]
 			2. int target 
 		
 		-The function returns the index of a target element if found else returns -1
