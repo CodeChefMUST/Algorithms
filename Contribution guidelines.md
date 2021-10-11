@@ -16,6 +16,9 @@
     * Space Complexity
 * You need not write any `main` function
 * Don't forget to mention your username as the author
+* Make sure to name your files according to these guidelines:
+    * Name your file in camel case. For example, if your contribution involves the source code for binary search in c++, then your file name must be BinarySearch.cpp. The same way, LinearSearch.py or BubbleSort.java.
+    * Pay close attention to the file structure, and if new folders are required to be created by you, then make sure that the spellings are correct and the naming convention follows camel case if required. For creating a new folder, every word must start with a capitalized letter. 
 
 6. Update algo.md file in present in the language folder for every algorithm, if required.
 7. Create a pull request and mention the issue number, also, give edit access to collaborators and maintainers.
