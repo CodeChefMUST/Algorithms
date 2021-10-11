@@ -11,6 +11,16 @@
 
 **YOU CANNOT CREATE A PR DIRECTLY. YOU NEED TO BE ASSIGNED AN ISSUE. IF THE ISSUE DOES NOT EXIST, CREATE ONE, ASK FOR IT IN YOUR PREFERRED PROGRAMMING LANGUAGE AND WAIT FOR IT TO BE ASSIGNED TO YOU. NOT FOLLOWING THIS WILL BE CONSIDERED A VIOLATION AND YOUR PR WILL BE MARKED INVALID. WHILE CREATING AN ISSUE, PLEASE FOLLOW THE FORMAT, ELSE, THE ISSUE WILL BE CLOSED.**
 
+# Repository structure:
+Please note that while creating a pull request, you must adhere to the structure of the repository.
+- Algorithm Type Folders (eg - searching, sorting, knapsack etc)
+    - Algorithm Folder
+        - Algorithm.md
+        - Language Folder
+            - Algorithm source code file
+            - Question based on the algorithm
+
+
 # Contribution Guidelines:
 If you want a more detailed explanation, please visit here.
 
