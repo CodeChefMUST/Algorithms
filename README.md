@@ -22,7 +22,7 @@ Please note that while creating a pull request, you must adhere to the structure
 
 
 # Contribution Guidelines:
-If you want a more detailed explanation, please visit [here](Contribution Guidelines.md).
+If you want a more detailed explanation, please visit [here](https://github.com/CodeChefMUST/DSA/blob/main/Contribution%20guidelines.md).
 
 * Issues will be assigned on a ***first come, first serve basis***. The person who creates the issue gets the first priority. And then, issues are assigned based on who commented first. You just have to comment on the issue, asking to be assigned and the programming language you should be assigned in, and it will be done if found fit.
 * You cannot work on any issue that is not assigned to you.
