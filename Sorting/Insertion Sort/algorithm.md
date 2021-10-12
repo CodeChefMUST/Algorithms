@@ -4,8 +4,8 @@ Insertion sort is a sorting algorithm in which the elements are transferred to t
 Step 1: for i = 1 to n-1
 Step 2: Let key = a [i]
 Step 3: Let j = i – 1
-Step 4: while key <= a[j]
-        set A[j+1] = A[j]
+Step 4: while key < a[j] and j >= 0
+        set a[j+1] = a[j]
         set j = j – 1
         (End of while loop)
 Step 5: set a[j+1] = key
