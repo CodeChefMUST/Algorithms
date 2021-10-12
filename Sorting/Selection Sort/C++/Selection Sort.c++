@@ -1,4 +1,3 @@
-```c++
 #include<iostream>
 using namespace std;
  
@@ -36,10 +35,10 @@ int main()
     }
     return 0;
 }
-```
+
 
 ### Sample Input:
-```c++
+*
 Enter the number of elements: 
 7
 Enter the elements of array:
