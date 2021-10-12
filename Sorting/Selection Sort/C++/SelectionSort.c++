@@ -1,18 +1,16 @@
 #include<iostream>
+
 using namespace std;
-int selectionsort(int a[], int n);
  
-int selectionsort(int a[], int n)
+// taking vector<int> array as input, along with it's size n
+vector<int> selectionsort(vector<int> a, int n)
 {
-    int i ,position ,minimum  ,j ,temp;
-    for(i = 0 ; i< n-1 ; i++)
-    {
+    int i, position, minimum, j, temp;
+    for (i = 0 ; i < n - 1 ; i++){
         minimum = a[i];
         position = i;
-        for(j= i + 1; j < n; j++)
-        {
-            if(minimum > a[j])
-            {
+        for (j= i + 1; j < n; j++) {
+            if (minimum > a[j]) {
                 minimum = a[j];
                 position = j;
             }
@@ -21,11 +19,7 @@ int selectionsort(int a[], int n)
         a[i] = a[position];
         a[position] = temp;
     }
-    for(i = 0 ;i < n; i++)
-    {
-        cout << a[i] << " ";
-    }
-    return 0;
+    return a;        
 }
 
 
