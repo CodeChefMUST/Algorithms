@@ -31,13 +31,11 @@ int selectionsort(int a[], int n)
 
 /*
 Sample Input:
-
 12 -78 99 -23 55 36 91
 */
 
 /*
 Output for above input
- 
 -78 -23 12 36 55 91 99 
 */
 
