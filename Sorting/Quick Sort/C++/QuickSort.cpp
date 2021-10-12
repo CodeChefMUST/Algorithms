@@ -8,21 +8,21 @@ void swap(int* a, int* b)
 	*b = t;
 }
 
-//This function takes last element as pivot, places
-//the pivot element at its correct position in sorted
-//array, and places all elements smaller than pivot
-//to left of pivot and all greater elements to right of pivot.
+//Partition function takes last element of the array as pivot,
+//Places the pivot element at its correct position in sorted array
+//Places all other elements to either left or right of the pivot element
+//Elements smaller than pivot element is palced left of pivot and all greater elements to right of pivot.
 int partition (int arr[], int l, int r)
 {
 	int pivot = arr[r]; // pivot
-	int i = (l - 1); // Index of smaller element and indicates the right position of pivot found so far
+	int i = (l - 1); 
 
 	for (int j = l; j <= r - 1; j++)
 	{
-		
+
 		if (arr[j] < pivot)
 		{
-			i++; 
+			i++;
 			swap(&arr[i], &arr[j]);
 		}
 	}
@@ -32,8 +32,8 @@ int partition (int arr[], int l, int r)
 
 //The main function that implements QuickSort
 //arr[] --> Array to be sorted,
-//l --> Starting index,
-//r --> Ending index 
+//l is the Starting index,
+//r is the final index
 void quickSort(int arr[], int l, int r)
 {
 	if (l < r)
@@ -50,21 +50,20 @@ void quickSort(int arr[], int l, int r)
 }
 
 
+/*
 
+# Sample Input:
 
-int main()
-{
-	int arr[] = {1,8,10,89,452,4,5,10};
-	int n = sizeof(arr) / sizeof(arr[0]);
-	quickSort(arr, 0, n - 1);
-	
-	cout << "Sorted array: \n";
+Enter the number of elements:
+7
+Enter the elements of array:
+12 78 10 53 55 26 91
+ ```
+Array elements after applying Quick Sort:
+10 12 26 53 55 78 91
+```
 
-	//Printing the sorted array
-	for (int i = 0; i < n; i++)
-		cout << arr[i] << " ";
-	cout << endl;
-	return 0;
-}
+**TIME COMPLEXITY:** O(nlogn)
+**SPACE COMPLEXITY:** O(1)
 
-
+*/
