@@ -12,12 +12,12 @@
 **YOU CANNOT CREATE A PR DIRECTLY. YOU NEED TO BE ASSIGNED AN ISSUE. IF THE ISSUE DOES NOT EXIST, CREATE ONE, ASK FOR IT IN YOUR PREFERRED PROGRAMMING LANGUAGE AND WAIT FOR IT TO BE ASSIGNED TO YOU. NOT FOLLOWING THIS WILL BE CONSIDERED A VIOLATION AND YOUR PR WILL BE MARKED INVALID. WHILE CREATING AN ISSUE, PLEASE FOLLOW THE FORMAT, ELSE, THE ISSUE WILL BE CLOSED.**
 
 # Repository structure:
-Please note that while creating a pull request, you must adhere to the structure of the repository.
-- Algorithm Type Folders (eg - searching, sorting, knapsack etc)
+Please note that while creating a pull request, you must adhere to the structure of the repository. You can create a pull request for any of the following - explaination of an algorithm in an Algorithm.md markdown file, a code of that algorithm in your preferred language, or your solutions to some questions based on that particular algorithm in a language of your choice. 
+- Algorithm Type Folders (eg - Searching, Sorting, Dynamic Programming etc)
     - Algorithm Folder
-        - Algorithm.md
-        - Language Folder
-            - Algorithm source code file
+        - Algorithm.md (markdown file explaining algorithm) 
+        - Language Folder (eg. C++, Python, Java, Ruby, C# etc.)
+            - Algorithm source code file (named as Algorithm.cpp / .py etc in CamelCase. Eg - HeapSort.cpp, BinarySearch.py)
             - Question based on the algorithm
 
 
