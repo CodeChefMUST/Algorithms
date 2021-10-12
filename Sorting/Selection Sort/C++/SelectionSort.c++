@@ -5,7 +5,7 @@ int selectionsort(int a[], int n);
 int selectionsort(int a[], int n)
 {
     int i ,position ,minimum  ,j ,temp;
-    for(i=0 ; i< n-1 ; i++)
+    for(i = 0 ; i< n-1 ; i++)
     {
         minimum = a[i];
         position = i;
@@ -21,7 +21,7 @@ int selectionsort(int a[], int n)
         a[i] = a[position];
         a[position] = temp;
     }
-    for(i=0 ;i < n; i++)
+    for(i = 0 ;i < n; i++)
     {
         cout << a[i] << " ";
     }
