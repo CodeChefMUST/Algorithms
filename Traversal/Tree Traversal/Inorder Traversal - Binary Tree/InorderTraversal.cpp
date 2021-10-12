@@ -32,17 +32,23 @@ Output 2: [4, 2, 5, 1, 3]
 */
 
 // Recursive code
-void InorderTraversal(Node *A)
+void UtilInorderTraversal(Node *A, vector<int> &ans)
 {
     if (A == NULL)
         return;
-    InorderTraversal(A->left);
-    cout << A->val << " ";
-    InorderTraversal(A->right);
+    UtilInorderTraversal(A->left, ans);
+    ans.push_back(A->val);
+    UtilInorderTraversal(A->right, ans);
+}
+vector<int> InorderTraversal(Node *A)
+{
+    vector<int> ans;
+    UtilInorderTraversal(A, ans);
+    return ans;
 }
 
 // Iterative code
-void inorderTraversal(Node *A)
+vector<int> inorderTraversal(Node *A)
 {
     stack<Node *> s;
     vector<int> ans;
@@ -65,11 +71,7 @@ void inorderTraversal(Node *A)
         ans.push_back(root->val);
         root = root->right;
     }
-    for (auto i : ans)
-    {
-        cout << i << " ";
-    }
-    return;
+    return ans;
 }
 
 //Time complexity : O(n)
