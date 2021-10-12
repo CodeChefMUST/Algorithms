@@ -27,12 +27,10 @@ int insertion_sort(int a[], int n)
 /*
 Sample Input:
 -78 55 90 -345 19 71 18 43
-*/
 
-/*
 Output for above sample input:
--345 -78 18 19 43 55 71 90 
-*/
+-345 -78 18 19 43 55 71 90
+*/ 
 
 /*
 TIME COMPLEXITY:
@@ -41,4 +39,4 @@ TIME COMPLEXITY:
   Worst Case: O(n^2)
   
 SPACE COMPLEXITY: O(1)
-*/
+*/ 
