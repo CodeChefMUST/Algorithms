@@ -36,21 +36,24 @@ int main()
     return 0;
 }
 
-
-
-# Sample Input:
 /*
+Sample Input:
+
 Enter the number of elements: 
 7
 Enter the elements of array:
 12 -78 99 -23 55 36 91
 */
 
-# Output for above input
 /*
+Output for above input
+
 Array elements after applying Selection Sort: 
 -78 -23 12 36 55 91 99 
 */
-**TIME COMPLEXITY:** O(n^2)  
-**SPACE COMPLEXITY:** O(1)
+
+/*
+TIME COMPLEXITY: O(n^2)  
+SPACE COMPLEXITY: O(1)
+*/
 
