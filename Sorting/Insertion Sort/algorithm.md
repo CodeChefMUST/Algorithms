@@ -10,5 +10,5 @@ Step 4: while key < a[j] and j >= 0
         (End of while loop)
 Step 5: set a[j+1] = key
         (End of for loop)
-Step 8: Exit
+Step 6: Exit
   ```
