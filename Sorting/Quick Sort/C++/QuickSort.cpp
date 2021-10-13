@@ -12,7 +12,7 @@ void swap(int* a, int* b)
 //Places the pivot element at its correct position in sorted array
 //Places all other elements to either left or right of the pivot element
 //Elements smaller than pivot element is palced left of pivot and all greater elements to right of pivot.
-int partition (int arr[], int l, int r)
+int partition (vector<int>& arr, int l, int r)
 {
 	int pivot = arr[r]; // pivot
 	int i = (l - 1); 
@@ -31,10 +31,12 @@ int partition (int arr[], int l, int r)
 }
 
 //The main function that implements QuickSort
-//arr[] --> Array to be sorted,
+//arr --> Vector array to be sorted,
 //l is the Starting index,
 //r is the final index
-void quickSort(int arr[], int l, int r)
+
+
+vector<int> quickSort(vector<int>& arr, int l, int r)// taking vector<int> array as input, along with first and last index
 {
 	if (l < r)
 	{
@@ -46,6 +48,8 @@ void quickSort(int arr[], int l, int r)
 		// partition and after partition
 		quickSort(arr, l, pi - 1);
 		quickSort(arr, pi + 1, r);
+
+		return arr;
 	}
 }
 
