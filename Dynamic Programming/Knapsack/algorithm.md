@@ -4,7 +4,7 @@ author: Vishal Ambavade (@VishalAmbavade)
 date: 2021-10-13
 ---
 
-![Knapsack Visual Representation](./Knapsack/knapsack_1.jpg, "Knapsack Visual Representation")
+![Knapsack Visual Representation](knapsack_1.jpg, "Knapsack Visual Representation")
 
 <p> Accoridng to Wikipedia, </p>
 > Given a set of items, each with a weight and a   value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.
