@@ -19,20 +19,20 @@ int ternary_search (int a[], int element, int right, int left)
 	  cout << "Element found at index value: " << rmid;
 	  exit(0);
 	}
-  if (a[lmid] == element)
-	{
+      if (a[lmid] == element)
+        {
 	  cout << "Element found at index value: " << lmid;
 	  exit(0);
 	}
-  else if (element < a[rmid] && element > a[lmid])
+      else if (element < a[rmid] && element > a[lmid])
 	{
 	  return ternary_search (a, element, rmid, lmid);
 	}
-  else if (element < a[lmid])
+      else if (element < a[lmid])
 	{
 	  return ternary_search (a, element, lmid, left);
 	} 
-  else
+      else
 	{
 	  return ternary_search (a, element, right, rmid);
 	}
