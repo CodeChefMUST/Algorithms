@@ -7,13 +7,17 @@ date: 2021-10-13
 ![Knapsack Visual Representation](knapsack_1.jpg)
 
 <p> Accoridng to Wikipedia, </p>
+
 > Given a set of items, each with a weight and a   value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.
 
-<br><br>
-<p> There are a few variations of Knapsack problem:
+<br>
+<p> There are a few variations of Knapsack problem:</p>
+
 - 0-1 Knapsack
 - Bounded knapsack
-- Unbounded Knapsack
+-  Unbounded Knapsack
+
+<br>
 
 Here, we'll see the algorithm of 0-1 Knapsack problem.
 
