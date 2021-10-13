@@ -10,7 +10,7 @@ Step 4: if right middle element = element
          exit
          if left middle element = element
          exit
-Step 4: If both of these conditions are not true, we will recursively call ternary_search function by following below conditions :
+Step 5: If both of these conditions are not true, we will recursively call ternary_search function by following below conditions :
          if element is less than right middle element and element is greater than left middle element
          return ternary_search (a, element, rmid, lmid)
          if element is less than left middle element
@@ -19,6 +19,6 @@ Step 4: If both of these conditions are not true, we will recursively call terna
          return ternary_search (a, element, right, rmid)
         
        (end of if loop)
-Step 5: exit
+Step 6: exit
          
 ```
