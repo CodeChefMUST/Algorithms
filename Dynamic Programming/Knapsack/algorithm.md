@@ -4,7 +4,7 @@ author: Vishal Ambavade (@VishalAmbavade)
 date: 2021-10-13
 ---
 
-![Knapsack Visual Representation](knapsack_1.jpg, "Knapsack Visual Representation")
+![Knapsack Visual Representation](knapsack_1.jpg)
 
 <p> Accoridng to Wikipedia, </p>
 > Given a set of items, each with a weight and a   value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.
@@ -38,4 +38,4 @@ for i = 1 to n do
          c[i, w] = c[i-1, w] 
 ```
 
-![Knapsack solution](knapsack_2.png, "Knapsack Solution")   
+![Knapsack solution](knapsack_2.png)   
