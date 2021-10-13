@@ -44,24 +44,21 @@ int ternary_search (int a[], int element, int right, int left)
 /* 
 Sample Input 1 :
 
-a= [21 , -99 , 33 , 46]
+a= [-99 , 21 , 33 , 46]
 element = 89
 
 Output : Element not found!
 
 Sample Input 2 :
 
-a= [21 , -99 , 33 , 46]
+a= [-99 , 21 , 33 , 46]
 element = 33
 
 Output : Element found at index value: 2
 */
 
 /*
-TIME COMPLEXITY : 
-Best Case : O(1)
-Average Case : O(log N)
-Worst Case : O(log N)
+TIME COMPLEXITY : O(log N)    {base 3}
 
 SPACE COMPLEXITY : O(1)
 */
