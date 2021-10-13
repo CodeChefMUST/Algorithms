@@ -1,6 +1,6 @@
 ---
 title: 0-1 Knapsack Dynamic Programming
-author: Vishal Ambavade
+author: Vishal Ambavade (@VishalAmbavade)
 date: 2021-10-13
 ---
 
