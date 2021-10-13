@@ -1,7 +1,11 @@
 /*
 Dijkstra's Algorithm is an algo used to compute distances of nodes from a single source in an undirected graph.
 Hence, this is part of the SSSP (Single Source Shortest Path) algorithms.
-In this, we will see how Dijkstra's is imlpemented for Adjacency Matrix representation of graphs
+In this, we will see how Dijkstra's is implemented for Adjacency Matrix representation of graphs.
+
+Time Complexity of the algorithm : O(V^2), here V is the number of nodes
+Space Complexity of the algorithm : O(V^2), as we are making a 2D array to store the distances of every node from every node
+
  */
 
 import java.io.*;
@@ -9,7 +13,7 @@ import java.util.*;
 
 public class Dijkstra {
     public static int[] Dijkstra_Matrix(int[][] graph, int source, int nodes){
-        // This approach has a time complexity of O(V^2), where V is the number of nodes
+
         int[] distances = new int[nodes + 1];
         Boolean[] visited = new Boolean[nodes + 1];
 
@@ -45,31 +49,37 @@ public class Dijkstra {
         return ans;
     }
     public static void main(String[] args) {
-        Scanner read = new Scanner(System.in);
 
-        int n = read.nextInt(); //This is the number of nodes in the graph
-        int e = read.nextInt(); //This is the number of edges in the graph
+        // The graph is 1 based indexed, hence has a row and column of 0s in the begnning.
 
-        int src = read.nextInt(); // This is the source node
+        int[][] graph1 = {{0,0,0,0,0,0,0,0,0,0},
+                { 0,0, 4, 0, 0, 0, 0, 0, 8, 0 },
+                {0, 4, 0, 8, 0, 0, 0, 0, 11, 0 },
+                {0, 0, 8, 0, 7, 0, 4, 0, 0, 2 },
+                { 0,0, 0, 7, 0, 9, 14, 0, 0, 0 },
+                { 0,0, 0, 0, 9, 0, 10, 0, 0, 0 },
+                { 0,0, 0, 4, 14, 10, 0, 2, 0, 0 },
+                { 0,0, 0, 0, 0, 0, 2, 0, 1, 6 },
+                { 0,8, 11, 0, 0, 0, 0, 1, 0, 7 },
+                { 0,0, 0, 2, 0, 0, 0, 6, 7, 0 } };
 
-        // In graphs, we have 2 types of representations; Adjacency list and Adjacency Matrix
-        // Hence, there will be two different functions.
+        // Source node
+        int src = 1;
+        // Total number of nodes
+        int n = 9;
 
-        // Adjacency matrix (1 based indexing)
-        int[][] graph1 = new int[n+1][n+1];
-
-        for (int i = 0; i < e; i++) {
-            int a = read.nextInt(); // First node of an edge
-            int b = read.nextInt(); // Second node of an edge
-            int weight = read.nextInt(); // weight of the edge, 1 in case nothing is given
-            graph1[b][a] = weight; // These statements are required as Dijkstra works for undirected graphs ONLY
-            graph1[a][b] = weight;
-        }
+        // Array of distances of nodes from the source
         int[] min_path = Dijkstra_Matrix(graph1,src,n);
+
 
         for (int i = 0; i < n; i++) {
             System.out.println("Distance from node " +  (i+1) + " " + min_path[i]);
         }
+        
+        /*
+        Currently, this code will be running on sample IO provided above!
+         */
+
     }
 }
 
