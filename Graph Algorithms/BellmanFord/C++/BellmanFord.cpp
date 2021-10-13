@@ -37,11 +37,11 @@
 /*
 	* Time Complexity : O(V*E); where V = number of vertices, E = number of edges
  	* Space Complexity : O(V)
-	* Sample Input : 			 0
+	* Sample Input : 			 	0
 						   (3)/    \(1)
-							/		\
-						   1 ------ 2 (Source)
-						   	  (-1)
+						     / 	    \
+						    1 ------ 2 (Source)
+						   	(-1)
 
 						V = 3, E = 3
 						weight between edges = 3, 1, -1
