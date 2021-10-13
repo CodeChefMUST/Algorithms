@@ -32,7 +32,7 @@ If you want a more detailed explanation, please visit [here](https://github.com/
 * Every time you add a file via a Pull Request also update the algo.md file for that particular language in the same PR. You'll find a algo.md file in each language folder for every algorithm.
 * Plagiarism is highly discouraged and a plagiarized PR won't be accepted at all and will be marked as spam.
 * PR should be created within a week of you being assigned to it.
-* At no point of time, you can claim more than 4 issues i.e. you can have at max 4 working issues, for this repository.
+* At no point of time, you can claim more than 3 issues i.e. you can have at max 3 working issues, for this repository. 
 
 # Maintainers / Collaborators:
 1. @Taneesha-creates
