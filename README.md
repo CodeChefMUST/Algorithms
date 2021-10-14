@@ -37,3 +37,5 @@ If you want a more detailed explanation, please visit [here](https://github.com/
 # Maintainers / Collaborators:
 1. @Taneesha-creates
 2. @deepansha-singh
+
+For all the spectators of this repository, if you like the content, please ⭐ it!
