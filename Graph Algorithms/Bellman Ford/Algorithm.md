@@ -1,8 +1,8 @@
-#Bellman Ford algorithm 
+# Bellman Ford algorithm 
 It helps us find the shortest path from a vertex to all other vertices of a weighted graph.
 It is very similar to the Dijkstra Algorithm. However, unlike the Dijkstra Algorithm, the Bellman-Ford algorithm can work on graphs with negative-weighted edges. This capability makes the Bellman-Ford algorithm a popular choice.
 
-##Step by Step Algorithm
+## Step by Step Algorithm
 
 - Start with the weighted graph.
 - Choose a starting vertex and assign infinity path values to all other vertices.
@@ -11,16 +11,16 @@ It is very similar to the Dijkstra Algorithm. However, unlike the Dijkstra Algor
 - Notice how the vertex at the top right corner had its path length adjusted.
 - After all the vertices have their path lengths, we check if a negative cycle is present.
 
-##Time Complexity
+## Time Complexity
 
 **Best Case Complexity :**  O(E)
 **Average Case Complexity :**  O(VE)
 **Worst Case Complexity :**  O(VE)
 
-##Space Complexity  
+## Space Complexity  
 O(V)
 
-##INPUT
+## INPUT
 V = 5
 E = 10
 S = 0
