@@ -14,6 +14,10 @@ import java.util.*;
 public class Dijkstra {
     public static int[] Dijkstra_Matrix(int[][] graph, int source, int nodes){
 
+        // Everything is one based indexing.
+        // source variable stands for the source node, from which we have to calculate the minimum distances.
+        // nodes variable is the number of nodes in the graph.
+
         int[] distances = new int[nodes + 1];
         Boolean[] visited = new Boolean[nodes + 1];
 
@@ -47,39 +51,6 @@ public class Dijkstra {
             ans[i] = distances[i+1];
         }
         return ans;
-    }
-    public static void main(String[] args) {
-
-        // The graph is 1 based indexed, hence has a row and column of 0s in the begnning.
-
-        int[][] graph1 = {{0,0,0,0,0,0,0,0,0,0},
-                { 0,0, 4, 0, 0, 0, 0, 0, 8, 0 },
-                {0, 4, 0, 8, 0, 0, 0, 0, 11, 0 },
-                {0, 0, 8, 0, 7, 0, 4, 0, 0, 2 },
-                { 0,0, 0, 7, 0, 9, 14, 0, 0, 0 },
-                { 0,0, 0, 0, 9, 0, 10, 0, 0, 0 },
-                { 0,0, 0, 4, 14, 10, 0, 2, 0, 0 },
-                { 0,0, 0, 0, 0, 0, 2, 0, 1, 6 },
-                { 0,8, 11, 0, 0, 0, 0, 1, 0, 7 },
-                { 0,0, 0, 2, 0, 0, 0, 6, 7, 0 } };
-
-        // Source node
-        int src = 1;
-        // Total number of nodes
-        int n = 9;
-
-        // Array of distances of nodes from the source
-        int[] min_path = Dijkstra_Matrix(graph1,src,n);
-
-
-        for (int i = 0; i < n; i++) {
-            System.out.println("Distance from node " +  (i+1) + " " + min_path[i]);
-        }
-        
-        /*
-        Currently, this code will be running on sample IO provided above!
-         */
-
     }
 }
 
