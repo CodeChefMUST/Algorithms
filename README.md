@@ -3,7 +3,7 @@
 
 # Overview 
 * The main goal of this project is to promote open-source, allowing anyone who wants to contribute.
-* This repository would be focused on data structure and algorithms in different languages.
+* This repository would be focused on various algorithms in different languages.
 * You can contribute to a description, code of that algorithm, and submit solutions to the questions related to that algorithm in any language you prefer.
 * Make sure to follow the contribution guidelines listed below.
 
