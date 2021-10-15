@@ -1,48 +1,3 @@
-<<<<<<< bellman_ford
-## Bellman Ford alforithm
-It is a algorithm to find out the shortest distance between nords.
-It makes use of Dynamic programming strategies and also works on negative weights.
-
-# Step By Step Procedure
-
-1) Start with a weighted graph
-
-2) Choose a strating vertex and assign infinity paths to all other vertices
-
-3) Visit each path and relax the path distance  if they are inaccurate 
-
-4) Now we have to do this V times because in the worst case, A vertex's path length might need to be readjested V times
-
-5) Notice how the vertex at the top right corner had its path lenght adjusted.
-
-
-
-# Pseudocode
-    function bellmanFord(G, S)
-    for each vertex V in G
-        distance[V] <- infinite
-        previous[V] <- NULL
-    distance[S] <- 0
-
-    for each vertex V in G				
-        for each edge (U,V) in G
-        tempDistance <- distance[U] + edge_weight(U, V)
-        if tempDistance < distance[V]
-            distance[V] <- tempDistance
-            previous[V] <- U
-
-    for each edge (U,V) in G
-        If distance[U] + edge_weight(U, V) < distance[V}
-        Error: Negative Cycle Exists
-
-    return distance[], previous[]
-
-
-
-
-# drawbacks of Bellman ford
-If the total weight of a cycle is negative then graph cannot be solved
-=======
 # Bellman Ford algorithm 
 It helps us find the shortest path from a vertex to all other vertices of a weighted graph.
 It is very similar to the Dijkstra Algorithm. However, unlike the Dijkstra Algorithm, the Bellman-Ford algorithm can work on graphs with negative-weighted edges. This capability makes the Bellman-Ford algorithm a popular choice.
@@ -55,6 +10,7 @@ It is very similar to the Dijkstra Algorithm. However, unlike the Dijkstra Algor
 - We need to do this V times because in the worst case, a vertex's path length might need to be readjusted V times.
 - Notice how the vertex at the top right corner had its path length adjusted.
 - After all the vertices have their path lengths, we check if a negative cycle is present.
+
 
 ## Time Complexity
 
