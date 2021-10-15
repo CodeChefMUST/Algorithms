@@ -14,9 +14,9 @@ It is very similar to the Dijkstra Algorithm. However, unlike the Dijkstra Algor
 
 ## Time Complexity
 
-**Best Case Complexity :**     O(E)
+**Best Case Complexity :**  O(E)
 **Average Case Complexity :**  O(VE)
-**Worst Case Complexity :**    O(VE)
+**Worst Case Complexity :**  O(VE)
 
 ## Space Complexity  
 O(V)
@@ -64,5 +64,4 @@ Vertex Distance from Source Distance
 2  7
 3  4 
 4  -2
-
->>>>>>>
+=======
