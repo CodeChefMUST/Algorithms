@@ -1,7 +1,7 @@
 <<<<<<< bellman_ford
 ## Bellman Ford alforithm
 It is a algorithm to find out the shortest distance between nords.
-It uses Dynamic programming stategies. It also works on negitive 
+It makes use of Dynamic programming strategies and also works on negative weights.
 
 # Step By Step Procedure
 
@@ -17,7 +17,7 @@ It uses Dynamic programming stategies. It also works on negitive
 
 
 
-# psudocode
+# Pseudocode
     function bellmanFord(G, S)
     for each vertex V in G
         distance[V] <- infinite
@@ -41,7 +41,7 @@ It uses Dynamic programming stategies. It also works on negitive
 
 
 # drawbacks of Bellman ford
-If the total weight of a cycle is negitive then graph cannot be solved
+If the total weight of a cycle is negative then graph cannot be solved
 =======
 # Bellman Ford algorithm 
 It helps us find the shortest path from a vertex to all other vertices of a weighted graph.
@@ -58,9 +58,9 @@ It is very similar to the Dijkstra Algorithm. However, unlike the Dijkstra Algor
 
 ## Time Complexity
 
-**Best Case Complexity :**  O(E)
+**Best Case Complexity :**     O(E)
 **Average Case Complexity :**  O(VE)
-**Worst Case Complexity :**  O(VE)
+**Worst Case Complexity :**    O(VE)
 
 ## Space Complexity  
 O(V)
@@ -108,4 +108,5 @@ Vertex Distance from Source Distance
 2  7
 3  4 
 4  -2
->>>>>>> main
+
+>>>>>>>
