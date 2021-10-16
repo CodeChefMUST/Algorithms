@@ -3,7 +3,7 @@ using namespace std;
 
 // right = number of elements of array - 1
 // left  = 0
-
+//contributed by Manas Misra
 int ternary_search (int a[], int element, int right, int left);
 
 int ternary_search (int a[], int element, int right, int left)
