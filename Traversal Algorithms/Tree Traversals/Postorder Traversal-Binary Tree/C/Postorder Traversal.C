@@ -1,7 +1,7 @@
 /*
         Author : Tanya Bansal
         Date : 18/10/2021
-        Description : This Program is on Bubble Sort
+        Description : This Program is on Postorder Traversal
 */
 
 #include<stdio.h>
