@@ -11,6 +11,13 @@ as possible along each branch before backtracking."
 https://en.wikipedia.org/wiki/Depth-first_search
 ```
 
+## Steps
+1. Start a stack with starting node (root node)
+2. Check if node at top of the stack (actual node) has been visited before. If true, remove the node from the stack.
+3. Otherwise, check if actual node has target value. If true, return actual node.
+4. If false, push all adjacent nodes of actual node into the stack.
+5. Repeat step 2 until find the desired node at step 3 or exhaust the stack
+
 ## Example
 
 ![Simple DFS](https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif)
