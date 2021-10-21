@@ -1,4 +1,4 @@
-#Here, left = 0 and right = length of array - 1
+# Here, left = 0 and right = length of array - 1
 
 def ternarySearch(ar , key , left , right):
     
@@ -8,18 +8,18 @@ def ternarySearch(ar , key , left , right):
         rightmid = right - inter
         leftmid = left +inter
         
-        if (ar[rightmid] == key): 
+        if (ar[rightmid] == key ): 
 
-            print("Element found!Index:",rightmid)
+            print( "Element found!Index:",rightmid )
             return 0;
         
         if (ar[leftmid] == key): 
 
-            print("Element found!Index:",leftmid)
+            print( "Element found!Index:",leftmid )
             return 0;
 
-        elif (key > ar[rightmid]): 
-            return ternarySearch(ar , key , rightmid , right)
+        elif (key > ar[rightmid]) : 
+            return ternarySearch( ar , key , rightmid , right)
 
         elif (key < ar[rightmid] and key > ar[leftmid] ) : 
             return ternarySearch( ar , key , leftmid , rightmid)
@@ -31,3 +31,12 @@ def ternarySearch(ar , key , left , right):
     print("Key not found!")
     
     return 0
+
+
+
+# Sample Input :
+# Ar = [12 , 90 , 67 , 19 , 18]
+# Key = 19
+
+# Output:
+# Element found!Index: 3
