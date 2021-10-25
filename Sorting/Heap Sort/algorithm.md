@@ -25,3 +25,8 @@ To sort an unsorted list with 'n' number of elements, following are the complexi
 Worst Case: O(n log n)
 
 Best Case : O(n log n)
+
+
+Questions realted to heap sort:
+
+Q1. K’th Smallest/Largest Element in Unsorted Array
