@@ -14,12 +14,13 @@ def InterpolationSearch(arr, key, n):
 
     return -1
 
-arr = [1, 3, 5, 7, 9, 11, 13, 15, 17]
-#fairly uniform sorted array
-n = len(arr)
-key = 11
-result = InterpolationSearch(arr, key, n)
-if result == -1:
-    print("Element is not present in the array.")
-else:
-    print("Element is present at index ", result)
+# arr = [1, 3, 5, 7, 9, 11, 13, 15, 17]
+# fairly uniform sorted array
+# n = len(arr)
+# key = 11
+
+# output: 5
+# time complexity best case: O(1)
+# time complexity average case: O(log2(log2N))
+# time complexity worst case: O(N)
+# space complexity: O(1) 
