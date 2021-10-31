@@ -14,3 +14,9 @@ Step 6: end of if
 Step 7: END of Merge_sort
 Step 8:Exit
 ```
+
+Count Inversion:
+This problem shows how far (or close) the array is from being sorted. 
+
+
+Sort Linked List Using Merge sort
